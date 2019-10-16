@@ -1,0 +1,63 @@
+button,
+.button {
+  border: 2px solid @black;
+  padding: 10px;
+  background-color: @white;
+  color: @black;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  &:hover {
+    background-color: darken(@white, 20%);
+  }
+
+  &.delete-button {
+    background-color: @orange;
+    border-color: @dark-grey;
+    position: relative;
+    padding-right: 60px;
+    line-height: 40px;
+    font-weight: @font-weight-bold;
+    &:hover {
+      background-color: darken(@orange, 20%);
+    }
+    &::after {
+      content: "\002B";
+      font-size: 50px;
+      line-height: 33px;
+      background-color: #fff;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      right: 10px;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+  }
+
+  &.list-remove-button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    vertical-align: bottom;
+    right: 0;
+    &:hover {
+      color: lighten(@black, 20%);
+    }
+    &::after {
+      content: "\002B";
+      font-size: 30px;
+      line-height: 30px;
+      border-radius: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: rotate(45deg);
+    }
+  }
+}
