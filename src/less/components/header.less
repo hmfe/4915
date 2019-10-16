@@ -1,0 +1,37 @@
+@logo-width: 70px;
+
+#header {
+  position: relative;
+  border-bottom: 1px solid @red;
+  .header-logo {
+    display: block;
+    float: left;
+    width: @logo-width;
+    padding: 20px 0;
+    transition: opacity 0.25s ease;
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      border: none;
+      text-decoration: none;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  h1 {
+    float: left;
+    font-size: 30px;
+    width: calc(~"100% - " @logo-width);
+    display: block;
+    padding: 20px;
+    @media screen and (max-width: @small-width) {
+      font-size: 20px;
+    }
+  }
+}

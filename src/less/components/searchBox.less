@@ -1,0 +1,67 @@
+.search-box {
+  background-color: @grey;
+  padding: 20px;
+  #search {
+    border: 2px solid @dark-grey;
+    line-height: 1;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  .search-list {
+    max-height: 200px;
+    overflow: auto;
+    background-color: @white;
+    border: 2px solid @dark-grey;
+    margin-top: 10px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        border-bottom: 1px solid @grey;
+        a {
+          display: block;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+  #search-history-list {
+    margin-top: 20px;
+    .search-history-list-header {
+      display: flex;
+      padding: 5px 40px 5px 0;
+      p {
+        flex-grow: 1;
+        width: 50%;
+        margin: 0;
+        font-size: 12px;
+        font-weight: @font-weight-bold;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        position: relative;
+        border-bottom: 1px solid @dark-grey;
+        padding: 5px 40px 5px 0; // Make room for buttons
+        line-height: 30px; // Same as buttons
+        display: flex;
+        p {
+          flex-grow: 1;
+          width: 50%;
+          margin: 0;
+          &.item-date {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .delete-button {
+    margin-top: 20px;
+  }
+}

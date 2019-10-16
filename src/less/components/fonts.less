@@ -1,0 +1,60 @@
+h1,
+.h1 {
+  font-family: @title-font-family;
+  font-size: 40px;
+  font-weight: @title-font-weight;
+  color: @title-color;
+  @media screen and (max-width: @mid-width) {
+    font-size: 30px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: @title-font-family;
+  font-size: 30px;
+  font-weight: @title-font-weight;
+  color: @title-color;
+}
+
+h3,
+.h3 {
+  font-family: @title-font-family;
+  font-size: 24px;
+  font-weight: @title-font-weight;
+  color: @title-color;
+}
+
+h4,
+.h4 {
+  font-family: @title-font-family;
+  font-size: 16px;
+  font-weight: @title-font-weight;
+  color: @title-color;
+}
+
+body {
+  font-family: @text-font-family;
+  font-size: 16px;
+  font-weight: @text-font-weight;
+  color: @text-color;
+}
+
+a {
+  color: @link-color;
+  text-decoration: underline;
+  transition: color 0.25s ease;
+  &:hover {
+    color: @link-color-hover;
+  }
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  margin: 20px;
+  padding-left: 20px;
+  list-style: disc;
+}

@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+  background-color: @background-color;
+}
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  display: none;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: @large-width;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (max-width: @large-width) {
+    max-width: @mid-width;
+  }
+  @media screen and (max-width: @mid-width) {
+    max-width: @small-width;
+  }
+  @media screen and (max-width: @small-width) {
+    max-width: none;
+  }
+}
+
+.main-content {
+  flex: 1 0 auto;
+  padding: 60px 0;
+}
